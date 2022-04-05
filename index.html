@@ -16,28 +16,30 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <img src="./img/logo.png" alt="logo">
-            <img src="./img/search.svg" alt="search">
-            <ul>
-                <li>
-                    <button>
+    <header class="header">
+        <div class="container header__wrp">
+            <div>
+                <img class="header__logo" src="./img/logo.png" alt="logo">
+                <img src="./img/search.svg" alt="search">
+            </div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <button class="header__button">
                         <img src="./img/menu.svg" alt="menu">
                     </button>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="header__item">
+                    <a href="#" class="header__link">
                         <img src="./img/reg.svg" alt="reg">
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="header__item">
+                    <a href="#" class="header__link">
                         <img src="./img/basket.svg" alt="basket">
                     </a>
                 </li>
             </ul>
-            <nav>
+            <nav class="header__nav">
                 <h2>menu</h2>
                 <ul>
                     <li>
@@ -96,9 +98,11 @@
         </div>
     </header>
     <main>
-        <section>
-            <img src="./img/promo.jpg" alt="promo">
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <img class="brand__img" src="./img/promo.jpg" alt="promo">
+            <div class="brand__title-wrp">
+                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+            </div>
         </section>
         <section>
             <h2>categories</h2>
@@ -210,7 +214,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2021 Brand All Rights Reserved.</p>
+        <p>&copy; 2021 promo All Rights Reserved.</p>
         <ul>
             <li>
                 <a href="#" target="_blank">

@@ -17,3 +17,74 @@ body {
    width: 1140px;
    margin: 0 auto;
 }
+
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
+.header {
+   background-color: var(--black);
+}
+
+.header__nav {
+   display: none;
+}
+
+.header__wrp {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-width: 75px;
+}
+
+.header__list {
+   display: flex;
+}
+
+.header__logo {
+   margin: 0 41px 0 0;
+}
+
+.header__link {
+   margin: 0 0 0 34px;
+}
+
+.brand {
+   display: flex;
+   margin: 0 0 62px 0;
+}
+
+.brand__title-wrp {
+   flex-grow: 1;
+   padding: 0 0 0 92px;
+   display: flex;
+   align-items: center;
+   background-color: var(--light-pink);
+}
+
+.brand__title {
+   font-size: 48px;
+   font-weight: 900;
+   line-height: 58px;
+   text-transform: uppercase;
+}
+
+.brand__subtitle {
+   display: block;
+   font-size: 37px;
+   font-weight: 700;
+   line-height: 44px;
+}
+
+.brand__subtitle-pink {
+   color: var(--dark-pink)
+}
