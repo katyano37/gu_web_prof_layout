@@ -6,23 +6,23 @@
    background-size: cover;
 }
 
-.feadback__item {
+.feedback__item {
    display: flex;
    justify-content: space-between;
 }
 
-.feadback__block {
+.feedback__block {
    width: 360px;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.feadback__block-img {
+.feedback__block-img {
    padding-bottom: 30px;
 }
 
-.feadback__block-text {
+.feedback__block-text {
    font-size: 20px;
    line-height: 24px;
    text-align: center;
@@ -33,10 +33,9 @@
    font-style: italic;
 }
 
-.feadback__subscribe {
+.feedback__subscribe {
    width: 560px;
    display: flex;
-   -ms-flex-direction: column;
    flex-direction: column;
    align-items: center;
    padding-top: 50px;
@@ -56,11 +55,11 @@
    font-size: 18px;
 }
 
-.subscribe__label {
+.subscribe-label {
    margin: 0 0 0 -10px;
 }
 
-.subscribe__email {
+.subscribe-email {
    margin: 0 0 0 0;
    width: 256px;
    height: 49px;
@@ -77,7 +76,7 @@
    color: $black;
 }
 
-.subscribe__button {
+.subscribe-button {
    width: 100px;
    height: 49px;
    border-top-right-radius: 20px;
@@ -91,8 +90,8 @@
    margin-left: -3px;
 }
 
-.subscribe__button:focus, 
-.subscribe__button:hover {
+.subscribe-button:focus, 
+.subscribe-button:hover {
    opacity: 0.5;
    cursor: pointer;
    outline: none;
