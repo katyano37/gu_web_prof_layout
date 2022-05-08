@@ -1,111 +1,142 @@
 .products {
    padding-top: 95px;
    padding-bottom: 95px;
+
+   &__title {
+      font-size: 30px;
+      line-height: 36px;
+      color: $black;
+      text-align: center;
+      margin-bottom: 6px;
+   }
+   
+   &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+      color: #9F9F9F;
+      text-align: center;
+      margin-bottom: 48px;
+   }
+   
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+
+   &__img {
+      width: 100%;
+   }
+   
+   &__item {
+      background: #F8F8F8;
+      width: 360px;
+   }
+
+   &__wrapper {
+      position: relative;
+   }
+   
+   &__overlay {
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+   }
+   
+   &__button {
+      position: absolute;
+      top: 50%;  
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 139px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      color: $white;
+      padding: 15px 0;
+      text-decoration: none;
+      border: 2px solid $white;
+      background: rgba(0, 0, 0, 0.4);         
+   }
+
+   &__button,
+   &__overlay {
+      display: none;
+   }
+   
+   &__item:hover &__button,
+   &__item:hover &__overlay {
+      display: block;
+   } 
+   
+   &__button:hover,
+   &__button:focus {
+      opacity: 0.5;
+      cursor: pointer;
+      outline: none;
+   }
+   
+   &__button:active {
+      opacity: 1;
+   }
+   
+   &__item-text {
+      padding: 24px 28px 20px 18px;
+   }
+   
+   &__item-caption {
+      font-size: 13px;
+      line-height: 16px;
+      color: $black;
+      padding-bottom: 13px;
+      text-transform: uppercase;
+   }
+   
+   &__item-desc {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5D5D5D;
+      padding-bottom: 18px;
+   }
+   
+   &__item-price {
+      font-size: 16px;
+      line-height: 19px;
+      color: $dark-pink;
+   }
+   // нижняя кнопка
+   &__browse { 
+      width: 212px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      color: $dark-pink;
+      padding: 15px 0;
+      text-decoration: none;
+      background-color: $white;
+      border: 2px solid #F26376;
+      margin-top: 63px;
+   }
+   
+   &__browse:hover,
+   &__browse:focus,
+   &__browse:active {
+      cursor: pointer;
+      outline: none;
+      color: $white;
+      background-color: $dark-pink;
+   }
 }
 
-.products-title {
-   font-size: 30px;
-   line-height: 36px;
-   color: $black;
-   text-align: center;
-   margin-bottom: 6px;
-}
-
-.products-subtitle {
-   font-size: 14px;
-   line-height: 17px;
-   color: #9F9F9F;
-   text-align: center;
-   margin-bottom: 48px;
-}
-
-.products__list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-}
-
-.products__wrapper {
-   position: relative;
-}
-
-.products__img {
-   width: 100%;
-}
-
-.products__item {
-   background: #F8F8F8;
-   width: 360px;
-}
-
-.products__overlay {
-   background: rgba(0, 0, 0, 0.2);
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-}
-
-.products__button, .products__overlay {
-   display: none;
-}
-
-.products__button:hover, 
-.products__button:focus {
-   opacity: 0.5;
-   cursor: pointer;
-   outline: none;
-}
-
-.products__item-text {
-   padding: 24px 28px 20px 18px;
-}
-
-.products__item-caption {
-   font-size: 13px;
-   line-height: 16px;
-   color: $black;
-   padding-bottom: 13px;
-   text-transform: uppercase;
-}
-
-.products__item-desc {
-   font-weight: 300;
-   font-size: 14px;
-   line-height: 17px;
-   color: #5D5D5D;
-   padding-bottom: 18px;
-}
-
-.products__item-price {
-   font-size: 16px;
-   line-height: 19px;
-   color: $dark-pink;
-}
-// нижняя кнопка
-.products__browse { 
-   width: 212px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 19px;
-   letter-spacing: 0.04em;
-   color: $dark-pink;
-   padding: 15px 0;
-   text-decoration: none;
-   background-color: $white;
-   border: 2px solid #F26376;
-   margin-top: 63px;
-}
-
-.products__browse:hover,
-.products__browse:focus,
-.products__browse:active {
-   cursor: pointer;
-   outline: none;
-   color: $white;
-   background-color: $dark-pink;
-}

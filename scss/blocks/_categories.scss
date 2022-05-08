@@ -1,53 +1,53 @@
 .categories {
    padding-top: 65px;
-}
 
-.categories__list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-}
-
-.categories__item {
-   width: 360px;
-   height: 260px;
-   flex-grow: 1;
-}
-
-.categories__item--women {
-   background-image: url(..//img/category-women.jpg);
-}
-
-.categories__item--men {
-   background-image: url(..//img/category-men.jpg);
-}
-
-.categories__item--kids {
-   background-image: url(..//img/category-kids.jpg);
-}
-
-.categories__item--accesories {
-   background-image: url(..//img/category-accesories.jpg);
-   height: 180px;
-}
-
-.categories__item-text {
-   text-align: center;
-   font-size: 16px;
-   line-height: 19px;
-   font-weight: 400;
-   color: $light-pink;
-   padding: 105px;
-   text-transform: uppercase;
-}
-
-.categories__item-text-pink {
-   color: $dark-pink;
-   font-size: 24px;
-   line-height: 29px;
-   font-weight: 700;
-}
-
-.item-text-accesories { 
-   padding: 65px;
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+   
+   &__item {
+      width: 360px;
+      height: 260px;
+      flex-grow: 1;
+   }
+   
+   &__item--women {
+      background-image: url(..//img/category-women.jpg);
+   }
+   
+   &__item--men {
+      background-image: url(..//img/category-men.jpg);
+   }
+   
+   &__item--kids {
+      background-image: url(..//img/category-kids.jpg);
+   }
+   
+   &__item--accesories {
+      background-image: url(..//img/category-accesories.jpg);
+      height: 180px;
+   }
+   
+   &__item-text {
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      color: $light-pink;
+      padding: 105px;
+      text-transform: uppercase;
+   }
+   
+   &__item-text-pink {
+      color: $dark-pink;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+   }
+   
+   .item-text-accesories { 
+      padding: 65px;
+   }
 }
