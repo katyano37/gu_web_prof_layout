@@ -119,52 +119,102 @@
       </div>
    </header>
    <main>
-      <section class="registration">
+      <section class="regpromo">
          <div class="container">
-            <h1 class="promo-all-title">registration</h1>
+            <h1 class="regpromo__title">registration</h1>
          </div>
       </section>
-      <div>      
-         <section >
-            тут будет регистрация
-         </section>
-         <section class="loyality">
-            <p class="loyality__title">LOYALTY HAS ITS PERKS</p>
-            <p class="loyality__txt">Get in on the loyalty program where you can earn points and unlock serious perks.
-               Starting with these as
-               soon as you join:</p>
-            <ul class="loyality__feat">
-               <li class="loyality__feat-list">15% off welcome offer</li>
-               <li class="loyality__feat-list">Free shipping, returns and exchanges on all orders</li>
-               <li class="loyality__feat-list">$10 off a purchase on your birthday</li>
-               <li class="loyality__feat-list">Early access to products</li>
-               <li class="loyality__feat-list">Exclusive offers & rewards</li>
-            </ul>
-         </section>
-         <section class="feedback">
-            <div class="container">
-               <h2 class="visually-hidden">feedback</h2>
-               <div class="feedback__item">
-                  <div class="feedback__block">
-                        <img class="feedback__block-img" src="./img/fedback-foto.png" alt="fedback-foto">
-                        <p class="feedback__block-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="block-text-it">pulvinar purus condimentum“</span></p>
-                  </div>
-                  <div class="feedback__subscribe">
-                        <h3 class="subscribe-text">subscribe<br><span class="subscribe-text subscribe-text-normal">our newletter and promotion</span></h3>
-                        <form action="#" class="subscribe-form">
-                           <label class="subscribe-label">
-                              <span class="visually-hidden">email</span>
-                              <input class="subscribe-email" type="email" required="" placeholder="   Enter Your Email">
-                           </label>
-                           <button class="subscribe-button" type="submit">Subscribe</button>
-                        </form>
-                  </div>
+      <section class="registation">
+         <div class="container registation__container">
+            <form class="registation__form">
+               <div class="registation__personal">
+                  <p class="registation__personal-top">Your Name</p>
+                  <input type="text" class="registation__input-name" placeholder="First Name" maxlength="255">
+                  <input type="text" class="registation__input-name" placeholder="Last Name" maxlength="255">
                </div>
-            </div>
-      </section>
-      </div>
+               <div class="registation__gender">
+                  <label><input type="radio" class="registation__custom-checkbox" name="gender" value="Male">
+                     <span class="registation__txt-check">Male</span>
+                  </label>
+                  <label><input type="radio" class="custom-checkbox" name="gender" value="Female">
+                     <span class="txt-check">Female</span>
+                  </label>
+               </div>
+               <div class="registation__login">
+                  <p class="registation__personal-top">Login details</p>
+                  <input type="email" class="registation__input-name" placeholder="Email" maxlength="255">
+                  <input type="password" class="registation__input-name" placeholder="Password" maxlength="255">
+               </div>
+               <div class="registation__pass-txt">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                  and lowercase letters
+               </div>
+               <button class="registation__join-btn" type="submit">
+                  <p class="registation__btn-txt">join now     <img src="./img/arrow-btn.svg" alt=""></p>
+               </button>
+            </form>
+            <section class="loyality">
+               <p class="loyality__title">loyalty has its perks</p>
+               <p class="loyality__txt">Get in on the loyalty program where you can earn points and unlock serious perks.
+                  Starting with these as
+                  soon as you join:</p>
+               <ul class="loyality__feat">
+                  <li class="loyality__feat-list">15% off welcome offer</li>
+                  <li class="loyality__feat-list">Free shipping, returns and exchanges on all orders</li>
+                  <li class="loyality__feat-list">$10 off a purchase on your birthday</li>
+                  <li class="loyality__feat-list">Early access to products</li>
+                  <li class="loyality__feat-list">Exclusive offers & rewards</li>
+               </ul>
+            </section>
+         </div>
+      </section>         
    </main>
-   <footer>
+   <section class="feedback">
+      <div class="container">
+         <h2 class="visually-hidden">feedback</h2>
+         <div class="feedback__item">
+            <div class="feedback__block">
+                  <img class="feedback__block-img" src="./img/fedback-foto.png" alt="fedback-foto">
+                  <p class="feedback__block-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="block-text-it">pulvinar purus condimentum“</span></p>
+            </div>
+            <div class="feedback__subscribe">
+                  <h3 class="subscribe-text">subscribe<br><span class="subscribe-text subscribe-text-normal">our newletter and promotion</span></h3>
+                  <form action="#" class="subscribe-form">
+                     <label class="subscribe-label">
+                        <span class="visually-hidden">email</span>
+                        <input class="subscribe-email" type="email" required="" placeholder="   Enter Your Email">
+                     </label>
+                     <button class="subscribe-button" type="submit">Subscribe</button>
+                  </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container footer__container">
+         <p class="footer__copy">&copy; 2021 All Rights Reserved.</p>
+         <ul class="footer__items">
+            <li class="footer__list">
+                  <a class="footer__list-icon" href="#" target="_blank">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+            </li>
+            <li class="footer__list">
+                  <a class="footer__list-icon" href="#" target="_blank">
+                     <i class="fab fa-instagram"></i>
+                  </a>
+            </li>
+            <li class="footer__list">
+                  <a class="footer__list-icon" href="#" target="_blank">
+                     <i class="fab fa-pinterest-p"></i>
+                  </a>
+            </li>
+            <li class="footer__list">
+                  <a class="footer__list-icon" href="#" target="_blank">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+            </li>
+         </ul>
+      </div>
    </footer>
 </body>
 

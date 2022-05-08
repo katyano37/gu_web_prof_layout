@@ -146,6 +146,10 @@
       margin: 0 0 0 34px;
       fill: $white;
       position: relative;
+
+      @include mobile {
+         display: none;
+      }
    }
    
    &__link:hover {
@@ -153,4 +157,3 @@
       cursor: pointer;
    }
 }
-

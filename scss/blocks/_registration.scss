@@ -1,4 +1,98 @@
-.registration {
+.regpromo {
    background: $light-pink;
    height: 148px;
+
+   &__title {
+      font-size: 24px;
+      line-height: 29px;
+      color: $dark-pink;
+      padding: 60px 0;
+      text-transform: uppercase;
+   }
+}
+
+.registation {  
+   &__container{
+      box-sizing: border-box;
+      height: 680px;
+      padding-top: 64px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__personal {
+      width: 360px;
+      padding-bottom: 32px;
+   }
+
+   &__personal-top {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      padding-bottom: 20px;
+   }
+
+   &__input-name {
+      border: 1px solid #eaf1fa;
+      width: 360px;
+      padding: 13px 0 16px 18px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      margin-bottom: 20px;
+   }
+
+   &__gender{
+      width: 132px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__custom-checkbox {
+      vertical-align: middle;
+      margin: 0;
+   }
+
+   &_txt-check {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: $black;
+   }
+
+   &__login {
+      width: 360px;
+      padding-top: 32px;
+   }
+
+   &__pass-txt {
+      width: 360px;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 16px;
+      color: #B1B1B1;
+      padding-top: 15px;
+      padding-bottom: 40px;
+   }
+
+   &__join-btn {
+      width: 167px;
+      padding: 17px 0;
+      background-color: $dark-pink;
+      border: none;
+   }
+
+   &__btn-txt {
+      color: $white;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+   }
 }
