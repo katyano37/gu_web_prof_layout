@@ -612,7 +612,7 @@ body {
   padding-top: 50px;
 }
 
-.subscribe__text {
+.subscribe-text {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
@@ -621,16 +621,16 @@ body {
   text-transform: uppercase;
 }
 
-.subscribe__text .subscribe__text-normal {
+.subscribe-text .subscribe-text-normal {
   font-weight: normal;
   font-size: 18px;
 }
 
-.subscribe__text .subscribe__label {
+.subscribe-text .subscribe-label {
   margin: 0 0 0 -10px;
 }
 
-.subscribe__text .subscribe__email {
+.subscribe-text .subscribe-email {
   margin: 0 0 0 0;
   width: 256px;
   height: 49px;
@@ -647,7 +647,7 @@ body {
   color: #222222;
 }
 
-.subscribe__text .subscribe__button {
+.subscribe-text .subscribe-button {
   width: 100px;
   height: 49px;
   border-top-right-radius: 20px;
@@ -661,8 +661,8 @@ body {
   margin-left: -3px;
 }
 
-.subscribe__text .subscribe__button:focus,
-.subscribe__text .subscribe__button:hover {
+.subscribe-text .subscribe-button:focus,
+.subscribe-text .subscribe-button:hover {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
@@ -727,5 +727,41 @@ body {
 .footer__list-icon:hover {
   background-color: #F16D7F;
   color: #FFFFFF;
+}
+
+.registration {
+  background: #F1E4E6;
+  height: 148px;
+}
+
+.loyality {
+  width: 652px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loyality__title {
+  text-transform: uppercase;
+}
+
+.loyality__txt {
+  padding-bottom: 20px;
+  padding-top: 22px;
+  width: 652px;
+}
+
+.loyality__feat {
+  list-style: url(../img/vector-list.svg);
+  padding-left: 30px;
+  padding-top: 12px;
+}
+
+.loyality__feat-list {
+  padding-left: 8px;
+  padding-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */

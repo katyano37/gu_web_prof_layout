@@ -1,4 +1,4 @@
-.subscribe__text {
+.subscribe-text {
    text-align: center;
    font-weight: bold;
    font-size: 24px;
@@ -6,16 +6,16 @@
    line-height: 30px;
    text-transform: uppercase;
    
-   .subscribe__text-normal {
+   .subscribe-text-normal {
       font-weight: normal;
       font-size: 18px;
    }
    
-   .subscribe__label {
+   .subscribe-label {
       margin: 0 0 0 -10px;
    }
    
-   .subscribe__email {
+   .subscribe-email {
       margin: 0 0 0 0;
       width: 256px;
       height: 49px;
@@ -30,7 +30,7 @@
       color: $black;
    }
    
-   .subscribe__button {
+   .subscribe-button {
       width: 100px;
       height: 49px;
       border-top-right-radius: 20px;
@@ -44,8 +44,8 @@
       margin-left: -3px;
    }
    
-   .subscribe__button:focus, 
-   .subscribe__button:hover {
+   .subscribe-button:focus, 
+   .subscribe-button:hover {
       opacity: 0.5;
       cursor: pointer;
       outline: none;

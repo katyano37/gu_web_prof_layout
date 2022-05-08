@@ -1,0 +1,29 @@
+.loyality{
+   width: 652px;
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
+   color: #000000;
+   box-sizing: border-box;
+
+   &__title {
+      text-transform: uppercase;
+   }
+
+   &__txt{
+      padding-bottom: 20px;
+      padding-top: 22px;
+      width: 652px;
+   }
+
+   &__feat{
+      list-style: url(../img/vector-list.svg);
+      padding-left: 30px;
+      padding-top: 12px;
+   }
+
+   &__feat-list{
+      padding-left: 8px;
+      padding-bottom: 16px;
+   }
+}
