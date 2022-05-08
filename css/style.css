@@ -414,12 +414,7 @@ body {
 @media (max-width: 1599px) {
   .categories__item {
     width: 233px;
-  }
-}
-
-@media (max-width: 767px) {
-  .categories__item {
-    width: 343px;
+    gap: 15px;
   }
 }
 
@@ -439,13 +434,14 @@ body {
   background-image: url(..//img/category-kids.jpg);
   background-size: cover;
   background-position: center;
-  background-size: cover;
 }
 
 .categories__item--accesories {
   background-image: url(..//img/category-accesories.jpg);
-  min-height: 180px;
+  height: 180px;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .categories__item-text {
@@ -479,6 +475,8 @@ body {
 .products__title {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
   text-align: center;
   margin-bottom: 6px;
@@ -487,6 +485,8 @@ body {
 .products__subtitle {
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   color: #9F9F9F;
   text-align: center;
   margin-bottom: 48px;
@@ -499,6 +499,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+
+@media (max-width: 1599px) {
+  .products__list {
+    gap: 15px;
+  }
 }
 
 .products__img {
@@ -634,6 +640,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 25px;
 }
 
@@ -664,6 +673,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1599px) {
+  .features__list {
+    padding-bottom: 48px;
+  }
 }
 
 .features__logo {
@@ -705,6 +720,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1599px) {
+  .feedback__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .feedback__block {

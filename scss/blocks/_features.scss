@@ -6,6 +6,7 @@
    &__item {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 25px;
 
       @include tablet {
@@ -20,6 +21,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include tablet {
+         padding-bottom: 48px;         
+      }
    }
    
    &__logo {

@@ -14,11 +14,13 @@
 
       @include tablet {
          width: 233px;
+         // height: 168px;
+         gap: 15px;
       }
 
-      @include mobile {
-         width: 343px;
-      }
+      // @include mobile {
+      //    width: 343px;
+      // }
    }
    
    &__item--women {
@@ -37,14 +39,14 @@
       background-image: url(..//img/category-kids.jpg);
       background-size: cover;
       background-position: center;
-      background-size: cover;
    }
    
    &__item--accesories {
       background-image: url(..//img/category-accesories.jpg);
-      min-height: 180px;
+      height: 180px;
       width: 100%;
-
+      background-size: cover;
+      background-position: center;
    }
    
    &__item-text {
