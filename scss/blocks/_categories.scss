@@ -12,11 +12,11 @@
       height: 260px;
       flex-grow: 1; 
 
-      @include tablet {
-         width: 233px;
-         // height: 168px;
-         gap: 15px;
-      }
+      // @include tablet {
+      //    width: 233px;
+      //    height: 168px;
+      //    gap: 15px;
+      // }
 
       // @include mobile {
       //    width: 343px;
@@ -64,5 +64,39 @@
    
    .item-text-accesories { 
       padding: 65px;
+   }
+}
+
+@media (max-width: $desktop-width) {
+   .categories__item {
+         width: 31.6%;
+         /*width: 232px;
+         min-height: 167px;*/
+         margin: 0 0 20px;
+   }
+
+   .categories__item--woman{
+         width: 31.6%;
+   }
+
+   .categories__item--shoes {
+
+         width: 100%;
+         /*min-height: 116px;*/
+         margin: 0 0 155px;
+   }
+}
+
+   @media (max-width: $tablet-width) {
+   .categories__item {
+         width: 100%;
+         min-height: 260px;
+         margin: 0 0 32px;
+   }
+
+   .sales__item--shoes {
+         width: 100%;
+         height: 100%;
+         /*min-height: 111px;*/
    }
 }
