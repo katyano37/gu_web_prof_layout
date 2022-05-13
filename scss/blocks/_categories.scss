@@ -8,33 +8,50 @@
    }
    
    &__item {
-      width: 360px;
+      width: 360px; 
       height: 260px;
-      flex-grow: 1;
+      flex-grow: 1; 
+
+      // @include tablet {
+      //    width: 233px;
+      //    height: 168px;
+      //    gap: 15px;
+      // }
+
+      // @include mobile {
+      //    width: 343px;
+      // }
    }
    
    &__item--women {
       background-image: url(..//img/category-women.jpg);
+      background-size: cover;
+      background-position: center;
    }
    
    &__item--men {
       background-image: url(..//img/category-men.jpg);
+      background-size: cover;
+      background-position: center;
    }
    
    &__item--kids {
       background-image: url(..//img/category-kids.jpg);
+      background-size: cover;
+      background-position: center;
    }
    
    &__item--accesories {
       background-image: url(..//img/category-accesories.jpg);
       height: 180px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
    }
    
    &__item-text {
+      @include font (16px, 19px, 400);
       text-align: center;
-      font-size: 16px;
-      line-height: 19px;
-      font-weight: 400;
       color: $light-pink;
       padding: 105px;
       text-transform: uppercase;
@@ -42,12 +59,44 @@
    
    &__item-text-pink {
       color: $dark-pink;
-      font-size: 24px;
-      line-height: 29px;
-      font-weight: 700;
+      @include font(24px, 29px, 700);
    }
    
    .item-text-accesories { 
       padding: 65px;
+   }
+}
+
+@media (max-width: $desktop-width) {
+   .categories__item {
+         width: 31.6%;
+         /*width: 232px;
+         min-height: 167px;*/
+         margin: 0 0 20px;
+   }
+
+   .categories__item--woman{
+         width: 31.6%;
+   }
+
+   .categories__item--shoes {
+
+         width: 100%;
+         /*min-height: 116px;*/
+         margin: 0 0 155px;
+   }
+}
+
+   @media (max-width: $tablet-width) {
+   .categories__item {
+         width: 100%;
+         min-height: 260px;
+         margin: 0 0 32px;
+   }
+
+   .sales__item--shoes {
+         width: 100%;
+         height: 100%;
+         /*min-height: 111px;*/
    }
 }
